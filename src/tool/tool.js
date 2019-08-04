@@ -1,4 +1,5 @@
 let tool={
+    // 继承
     inherit(target, origin){
      function F(){}
      F.prototype = origin.prototype
@@ -12,6 +13,7 @@ let tool={
        this.inherit(F,origin) 
        return F
    },
+   //单例模式
    single(origin){
     var F =  (function(){
          let cache
@@ -28,6 +30,7 @@ let tool={
    }
  
 }
+// 防抖
 function debounce(fun, time) {
     var key = true
     return function (e) {

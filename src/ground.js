@@ -16,7 +16,6 @@ ground.init = function () {
         for (var j = 0 ; j< XLEN ; j++){ 
         if (i == 0 || j == 0 || i == YLEN-1 || j == XLEN-1 ){
             newSquare = Square.cerate ('Stone',i,j,'url(./img/stone.png)');
-
         }else{
             newSquare = Square.cerate ('Floor',i,j,'url(./img/map.jpg)');
         }

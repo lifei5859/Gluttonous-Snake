@@ -9,7 +9,7 @@ let YLEN = 30;
 // 速度
 let INTERVAL = 300;
 // 定义方块祖先
-function Square (x, y, width, height, dom) {
+function Square(x, y, width, height, dom) {
     this.x = x;
     this.y = y;
     this.width = width;
